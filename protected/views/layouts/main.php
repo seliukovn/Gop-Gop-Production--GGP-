@@ -24,6 +24,12 @@
 
 	<div id="header">
 		<div id="logo">Наш сайт</div>
+        <ul>
+            <li>Главная</li>
+            <li>Контакты</li>
+            <li>О нас</li>
+            <li>Вермишелька</li>
+        </ul>
 	</div><!-- header -->
 
 	<div id="mainmenu">

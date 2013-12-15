@@ -2,23 +2,22 @@
 
 class SiteController extends Controller
 {
-	//self::defaultAction = 'alexey';
-	
 	/**
 	 * Declares class-based actions.
 	 */
 	public function actions()
 	{
+
 		return array(
 			// captcha action renders the CAPTCHA image displayed on the contact page
-			'captcha'=>array(
-				'class'=>'CCaptchaAction',
-				'backColor'=>0xFFFFFF,
+			'captcha' => array(
+				'class' => 'CCaptchaAction',
+				'backColor' => 0xFFFFFF,
 			),
 			// page action renders "static" pages stored under 'protected/views/site/pages'
 			// They can be accessed via: index.php?r=site/page&view=FileName
-			'page'=>array(
-				'class'=>'CViewAction',
+			'page' => array(
+				'class' => 'CViewAction',
 			),
 		);
 	}
@@ -29,12 +28,7 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()//$text)
 	{
-		die( print_r($_GET));//echo $text;//$this->render('index');
-	}
-
-	public function actionAlexey()
-	{
-		echo 1;
+		$this->render('index', array('asd' => 'Василий Иссамуилович Уткин'));
 	}
 
 	/**
