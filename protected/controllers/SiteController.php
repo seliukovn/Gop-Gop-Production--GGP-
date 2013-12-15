@@ -2,6 +2,8 @@
 
 class SiteController extends Controller
 {
+	//self::defaultAction = 'alexey';
+	
 	/**
 	 * Declares class-based actions.
 	 */
@@ -25,11 +27,14 @@ class SiteController extends Controller
 	 * This is the default 'index' action that is invoked
 	 * when an action is not explicitly requested by users.
 	 */
-	public function actionIndex()
+	public function actionIndex()//$text)
 	{
-		// renders the view file 'protected/views/site/index.php'
-		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
+		die( print_r($_GET));//echo $text;//$this->render('index');
+	}
+
+	public function actionAlexey()
+	{
+		echo 1;
 	}
 
 	/**
